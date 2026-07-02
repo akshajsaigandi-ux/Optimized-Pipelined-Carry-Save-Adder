@@ -108,7 +108,7 @@ Optimized-Pipelined-Carry-Save-Adder/
 
 ## Author
 
-**Akshaj Sai Gandi**
+**Akshaj Gandi**
 
 Electronics and Communication Engineering
 
