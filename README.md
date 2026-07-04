@@ -12,6 +12,24 @@ This project presents the design and implementation of an **Optimized Pipelined 
 
 The design was developed using Verilog HDL and verified through behavioral simulation and RTL synthesis in Xilinx Vivado. The implementation targets the Xilinx Artix-7 FPGA family.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Motivation](#motivation)
+- [Features](#features)
+- [Project Status](#project-status)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Repository Structure](#repository-structure)
+- [Synthesis Results](#synthesis-results)
+- [Simulation Results](#simulation-results)
+- [Applications](#applications)
+- [Verification](#verification)
+- [Running the Project](#running-the-project)
+- [Future Improvements](#future-improvements)
+- [Conclusion](#conclusion)
+- [License](#license)
+
 ## Motivation
 
 Arithmetic operations are the backbone of modern cryptographic systems. Traditional Ripple Carry Adders suffer from large carry propagation delays, while conventional Carry Save Adders still require a final carry propagation stage.
@@ -197,6 +215,13 @@ If you find improvements, feel free to open an issue or submit a pull request.
 - UVM verification environment
 
 ---
+
+## Reports
+
+The following synthesis reports are included in the `reports/` directory:
+
+- `utilization_report.rpt`
+- `timing_summary.rpt`
 
 ## Conclusion
 
