@@ -8,11 +8,9 @@
 
 ## Overview
 
-This project presents the design and implementation of an **Optimized Pipelined Carry-Save Adder (PCSA)** for 16-bit cryptographic arithmetic units. The architecture is designed to improve computational throughput and reduce propagation delay by combining carry-save addition with a multi-stage pipelined structure.
+This project presents the design and implementation of an **Optimized Pipelined Carry-Save Adder (PCSA)** for 16-bit cryptographic arithmetic units. The architecture improves computational throughput by combining carry-save addition with a **single-stage pipelined architecture**, reducing the critical path before the final carry propagation stage.
 
-The design was developed using **Verilog HDL** and implemented using **Xilinx Vivado** targeting a **Xilinx Artix-7 FPGA**.
-
----
+The design was developed using Verilog HDL and verified through behavioral simulation and RTL synthesis in Xilinx Vivado. The implementation targets the Xilinx Artix-7 FPGA family.
 
 ## Motivation
 
@@ -24,27 +22,51 @@ This project introduces a pipelined CSA architecture that improves operating fre
 
 ## Features
 
-- 16-bit Carry-Save Adder architecture
-- Multi-stage pipelined design
-- Reduced critical path delay
-- Higher throughput
-- FPGA implementation using Xilinx Vivado
-- Optimized for cryptographic arithmetic operations
-- Performance comparison with RCA and conventional CSA
+- 16-bit Carry Save Adder
+- Single-stage pipelined architecture
+- Modular Verilog RTL implementation
+- Behavioral simulation in Vivado
+- RTL synthesis
+- Resource utilization analysis
+- Timing summary generation
 
 ---
 
+## Project Status
+
+| Stage | Status |
+|--------|:------:|
+| RTL Design | ✅ |
+| Behavioral Simulation | ✅ |
+| RTL Elaboration | ✅ |
+| RTL Synthesis | ✅ |
+| Documentation | ✅ |
+
 ## Architecture
 
-The proposed architecture consists of five major stages:
-
-1. Input Register Stage
-2. Carry Save Adder Stage 1
-3. Pipeline Register
-4. Carry Save Adder Stage 2
-5. Final Carry Propagate Adder (Ripple Carry Adder)
-
-The pipelined approach allows multiple operands to be processed simultaneously, significantly improving throughput.
+```text
+          A
+          B
+          C
+          │
+          ▼
++----------------------+
+| Carry Save Adder     |
++----------------------+
+          │
+          ▼
++----------------------+
+| Pipeline Register    |
++----------------------+
+          │
+          ▼
++----------------------+
+| Ripple Carry Adder   |
++----------------------+
+          │
+          ▼
+     RESULT, COUT
+```
 
 ---
 
@@ -65,26 +87,44 @@ Optimized-Pipelined-Carry-Save-Adder/
 │
 ├── rtl/
 ├── testbench/
-├── simulation/
-├── diagrams/
-├── images/
 ├── reports/
 ├── docs/
+│   └── images/
+├── diagrams/
+├── simulation/
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
-## Performance Summary
+## Synthesis Results
 
-| Parameter | RCA | CSA | Proposed PCSA |
-|-----------|------|------|---------------|
-| Delay | 12.8 ns | 7.2 ns | 3.5 ns |
-| Frequency | ~78 MHz | ~138 MHz | >280 MHz |
-| Throughput | Low | Moderate | High |
+| Resource | Usage |
+|----------|------:|
+| Slice LUTs | 31 |
+| Slice Registers | 31 |
+| Bonded I/O | 67 |
+| BUFGCTRL | 1 |
+
+Behavioral simulation and RTL synthesis completed successfully in Vivado 2025.2.
 
 ---
+
+> **Note:** No XDC timing constraints were specified for this project. The reported synthesis results confirm successful RTL synthesis, while timing metrics are not evaluated against a user-defined target clock.
+
+## Simulation Results
+
+The design was verified using behavioral simulation in Xilinx Vivado.
+
+### Test Vectors
+
+| A | B | C | Result |
+|---:|---:|---:|---:|
+|10|20|30|60|
+|100|200|300|600|
+|1024|2048|4096|7168|
+|65535|1|0|Overflow|
 
 ## Applications
 
@@ -96,6 +136,58 @@ Optimized-Pipelined-Carry-Save-Adder/
 
 ---
 
+## Verification
+
+- ✔ Behavioral Simulation completed
+- ✔ RTL Elaboration successful
+- ✔ RTL Synthesis successful
+- ✔ Resource Utilization generated
+- ✔ Timing Summary generated
+- ✔ No synthesis errors
+
+## RTL Schematic
+
+![RTL Schematic](docs/images/elaborated_design.png)
+
+## Simulation Waveform
+
+![Simulation Waveform](docs/images/simulation_waveform.png)
+
+## Synthesized Design
+
+![Synthesized Design](docs/images/synthesized_design.png)
+
+## Resource Utilization
+
+![Resource Utilization](docs/images/utilization.png)
+
+## Timing Summary
+
+![Timing Summary](docs/images/timing_summary.png)
+
+## Running the Project
+
+### Requirements
+
+- Xilinx Vivado 2025.2 (or compatible version)
+
+### Steps
+
+1. Clone the repository.
+2. Open Xilinx Vivado.
+3. Create a new RTL Project.
+4. Add all files from the `rtl/` directory as **Design Sources**.
+5. Add `testbench/pcsa_tb.v` as a **Simulation Source**.
+6. Set `pcsa_top` as the **Top Module**.
+7. Run **Behavioral Simulation**.
+8. Run **Synthesis**.
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome.
+
+If you find improvements, feel free to open an issue or submit a pull request.
+
 ## Future Improvements
 
 - 32-bit implementation
@@ -105,6 +197,10 @@ Optimized-Pipelined-Carry-Save-Adder/
 - UVM verification environment
 
 ---
+
+## Conclusion
+
+The proposed 16-bit Optimized Pipelined Carry-Save Adder was successfully designed, simulated, and synthesized using Verilog HDL in Xilinx Vivado. The modular architecture demonstrates improved throughput through pipelining while maintaining efficient FPGA resource utilization, making it suitable as a building block for high-speed arithmetic and cryptographic applications.
 
 ## Author
 
@@ -118,4 +214,8 @@ SRM Institute of Science and Technology
 
 ## License
 
-This project is released under the MIT License.
+This project is released under the MIT License. See the LICENSE file for details.
+
+## Support
+
+If you found this project useful, consider giving the repository a ⭐.
