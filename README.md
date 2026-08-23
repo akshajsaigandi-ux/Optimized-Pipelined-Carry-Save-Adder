@@ -18,11 +18,23 @@ This project presents the design and implementation of an **Optimized Pipelined 
 
 The design was developed using **Verilog HDL**, verified through **behavioral simulation**, and synthesized using **Xilinx Vivado 2025.2** targeting the **Xilinx Artix-7 FPGA** family.
 
+This work also resulted in a **published Indian Patent** and was presented at **ETCC 2026**, an IEEE-associated international conference.
+
+---
+
+## Project Impact
+
+- 🇮🇳 **Published Indian Patent** based on the PCSA architecture.
+- 🎤 **Presented at ETCC 2026**, an IEEE-associated International Conference.
+- ⚡ Demonstrates the complete FPGA design flow from RTL design to synthesis and timing analysis.
+- 🔒 Serves as a reusable arithmetic building block for cryptographic hardware.
+
 ---
 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Project Impact](#project-impact)
 - [Motivation](#motivation)
 - [Features](#features)
 - [Project Status](#project-status)
@@ -39,6 +51,7 @@ The design was developed using **Verilog HDL**, verified through **behavioral si
 - [Resource Utilization](#resource-utilization)
 - [Timing Summary](#timing-summary)
 - [Power Analysis](#power-analysis)
+- [Recognition](#recognition)
 - [Running the Project](#running-the-project)
 - [Future Improvements](#future-improvements)
 - [Reports](#reports)
@@ -129,7 +142,6 @@ Optimized-Pipelined-Carry-Save-Adder/
 ├── rtl/
 ├── testbench/
 ├── reports/
-├── docs/
 ├── diagrams/
 │   ├── rtl_schematic.png
 │   ├── behavioral_waveform.png
@@ -203,7 +215,7 @@ The complete design flow was successfully verified.
 ## RTL Schematic
 
 <p align="center">
-  <img src="./diagrams/rtl_schematic.png" alt="RTL Schematic" width="100%">
+  <img src="diagrams/rtl_schematic.png" alt="RTL Schematic" width="100%">
 </p>
 
 *Figure 1. RTL schematic generated using Xilinx Vivado.*
@@ -213,7 +225,7 @@ The complete design flow was successfully verified.
 ## Simulation Waveform
 
 <p align="center">
-  <img src="./diagrams/behavioral_waveform.png" alt="Simulation Waveform" width="100%">
+  <img src="diagrams/behavioral_waveform.png" alt="Simulation Waveform" width="100%">
 </p>
 
 *Figure 2. Behavioral simulation showing correct functional verification.*
@@ -223,7 +235,7 @@ The complete design flow was successfully verified.
 ## Synthesized Design
 
 <p align="center">
-  <img src="./elaborated_design.png" alt="Synthesized Design" width="100%">
+  <img src="elaborated_design.png" alt="Elaborated RTL Design" width="100%">
 </p>
 
 *Figure 3. Elaborated RTL design.*
@@ -233,12 +245,12 @@ The complete design flow was successfully verified.
 ## Resource Utilization
 
 <p align="center">
-  <img src="./diagrams/utilization.png" alt="Resource Utilization" width="100%">
+  <img src="diagrams/utilization.png" alt="Resource Utilization" width="100%">
 </p>
 
 *Figure 4. FPGA resource utilization after synthesis.*
 
-Key observations:
+### Key Observations
 
 - Efficient utilization of FPGA resources.
 - Minimal logic consumption.
@@ -249,7 +261,7 @@ Key observations:
 ## Timing Summary
 
 <p align="center">
-  <img src="./diagrams/timing_summary.png" alt="Timing Summary" width="100%">
+  <img src="diagrams/timing_summary.png" alt="Timing Summary" width="100%">
 </p>
 
 *Figure 5. Vivado timing summary.*
@@ -272,7 +284,7 @@ The design completed synthesis without timing violations, although no user-defin
 ## Power Analysis
 
 <p align="center">
-  <img src="./diagrams/power_summary.png" alt="Power Analysis" width="100%">
+  <img src="diagrams/power_summary.png" alt="Power Analysis" width="100%">
 </p>
 
 *Figure 6. Vivado estimated power report.*
@@ -285,7 +297,41 @@ The design completed synthesis without timing violations, although no user-defin
 | Junction Temperature | **107.1°C** |
 | Ambient Temperature | **25°C** |
 
-> **Note:** This power report is an estimated Vivado analysis using limited switching activity information. The unusually high I/O power results from vectorless estimation and should not be interpreted as measured hardware power.
+> **Note:** This power report is based on Vivado's vectorless power estimation. The unusually high I/O power is an estimation artifact and should not be interpreted as measured hardware power.
+
+---
+
+## 🏆 Recognition
+
+### 🇮🇳 Published Indian Patent
+
+This project resulted in a published Indian Patent.
+
+| Item | Details |
+|------|---------|
+| **Patent Title** | Optimized Pipelined Carry-Save Adder (PCSA) |
+| **Application No.** | 202641018710 |
+| **Publication No.** | IN202641018710 A1 |
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Indian-Patent-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Publication-IN202641018710_A1-blue?style=for-the-badge"/>
+</p>
+
+---
+
+### 🎤 ETCC 2026 Conference Presentation
+
+The research based on this project was presented at:
+
+- **Conference:** ETCC 2026 – International Conference on Emerging Technologies in Computing and Communication
+- **Host:** PES University EC Campus, Bengaluru
+- **Technical Association:** IEEE Bangalore Section, IEEE Computer Society Bangalore Chapter, and IEEE Communications Society Bangalore Chapter
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Conference-ETCC%202026-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/IEEE-Associated-00629B?style=for-the-badge&logo=ieee"/>
+</p>
 
 ---
 
@@ -322,7 +368,7 @@ If you identify improvements, feel free to open an issue or submit a pull reques
 
 - 32-bit implementation
 - 64-bit implementation
-- Carry Lookahead based final adder
+- Carry Lookahead-based final adder
 - ASIC implementation
 - UVM verification environment
 
@@ -341,7 +387,7 @@ The following synthesis reports are included in the `reports/` directory.
 
 The proposed **16-bit Optimized Pipelined Carry-Save Adder** was successfully designed, simulated, elaborated, and synthesized using **Verilog HDL** and **Xilinx Vivado**.
 
-The modular pipelined architecture demonstrates improved computational throughput while maintaining efficient FPGA resource utilization, making it suitable as a reusable building block for cryptographic arithmetic and high-speed digital hardware.
+The modular pipelined architecture demonstrates improved computational throughput while maintaining efficient FPGA resource utilization. The project's impact extends beyond implementation through a **published Indian Patent** and an **ETCC 2026 conference presentation**, demonstrating its relevance to cryptographic hardware research and FPGA-based digital design.
 
 ---
 
@@ -364,3 +410,11 @@ This project is released under the **MIT License**. See the `LICENSE` file for d
 ## Support
 
 If you found this project useful, consider giving the repository a ⭐.
+
+## Why this version is stronger
+
+- Added a **Project Impact** section immediately after the overview.
+- Added a **Recognition** section with only project-related achievements (Patent + ETCC 2026).
+- Standardized image paths (`diagrams/...`) for better GitHub compatibility.
+- Kept all synthesis, timing, power, and FPGA implementation data unchanged.
+- Matches the professional style of your **RVV-Inspired RISC-V Vector Processor** and **Neuromorphic LIF Simulation** repositories, making your GitHub portfolio look consistent.
