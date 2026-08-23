@@ -410,11 +410,3 @@ This project is released under the **MIT License**. See the `LICENSE` file for d
 ## Support
 
 If you found this project useful, consider giving the repository a ⭐.
-
-## Why this version is stronger
-
-- Added a **Project Impact** section immediately after the overview.
-- Added a **Recognition** section with only project-related achievements (Patent + ETCC 2026).
-- Standardized image paths (`diagrams/...`) for better GitHub compatibility.
-- Kept all synthesis, timing, power, and FPGA implementation data unchanged.
-- Matches the professional style of your **RVV-Inspired RISC-V Vector Processor** and **Neuromorphic LIF Simulation** repositories, making your GitHub portfolio look consistent.
