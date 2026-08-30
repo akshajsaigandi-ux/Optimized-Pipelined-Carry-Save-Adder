@@ -262,7 +262,7 @@ The design was verified using **behavioral simulation** in Xilinx Vivado.
 
 ## Verification
 
-The complete design flow was successfully verified.
+The complete design flow was successfully executed and verified through simulation, synthesis, implementation, resource analysis, timing analysis, and power estimation.
 
 - ✔ Behavioral Simulation completed
 - ✔ RTL Elaboration successful
