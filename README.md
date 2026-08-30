@@ -41,7 +41,7 @@ This work also resulted in a **published Indian Patent** and was presented at **
 - [Architecture](#architecture)
 - [Technologies Used](#technologies-used)
 - [Repository Structure](#repository-structure)
-- [Synthesis Results](#synthesis-results)
+- [Synthesis and FPGA Implementation Results](#synthesis-and-fpga-implementation-results)
 - [Simulation Results](#simulation-results)
 - [Applications](#applications)
 - [Verification](#verification)
