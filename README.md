@@ -321,7 +321,7 @@ The complete design flow was successfully verified.
 
 | Metric | Value |
 |--------|------:|
-| Worst Negative Slack (WNS) | **∞** |
+| Worst Negative Slack (WNS) | **N/A** |
 | Total Negative Slack (TNS) | **0.000 ns** |
 | Worst Hold Slack (WHS) | **∞** |
 | Total Hold Slack (THS) | **0.000 ns** |
