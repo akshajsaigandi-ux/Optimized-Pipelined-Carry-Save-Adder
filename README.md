@@ -91,6 +91,7 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 | RTL Elaboration | ✅ |
 | RTL Synthesis | ✅ |
 | FPGA Implementation | ✅ |
+| Resource Analysis | ✅ |
 | Documentation | ✅ |
 
 ---
