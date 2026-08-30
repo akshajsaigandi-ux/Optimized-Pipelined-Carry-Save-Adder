@@ -208,7 +208,7 @@ The implemented design contains **53 timing endpoints** and reports no failing e
     <img src="diagrams/timing_summary.png" alt="Timing Summary" width="100%">
 </p>
 
-*Figure 4. Vivado implementation timing summary.*
+*Figure 2. Vivado implementation timing summary.*
 
 ---
 
