@@ -417,6 +417,7 @@ The research based on this project was presented at:
 8. Run **RTL Elaboration**.
 9. Run **Synthesis**.
 10.  Run **Implementation**.
+11.  Review **Resource Utilization**.
 
 ---
 
