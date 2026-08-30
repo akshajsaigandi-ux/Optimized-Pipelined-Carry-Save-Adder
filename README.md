@@ -453,7 +453,7 @@ The following synthesis reports are included in the `reports/` directory.
 
 ## Conclusion
 
-The proposed **16-bit Optimized Pipelined Carry-Save Adder** was successfully designed, simulated, elaborated, and synthesized using **Verilog HDL** and **Xilinx Vivado**.
+The proposed **16-bit Optimized Pipelined Carry-Save Adder** was successfully designed, simulated, elaborated, synthesized, implemented, and bitstream-generated using **Verilog HDL** and **Xilinx Vivado**.
 
 The modular pipelined architecture demonstrates improved computational throughput while maintaining efficient FPGA resource utilization. The project's impact extends beyond implementation through a **published Indian Patent** and an **ETCC 2026 conference presentation**, demonstrating its relevance to cryptographic hardware research and FPGA-based digital design.
 
