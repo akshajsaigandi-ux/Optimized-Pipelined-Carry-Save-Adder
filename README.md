@@ -93,6 +93,7 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 | FPGA Implementation | ✅ |
 | Resource Analysis | ✅ |
 | Timing Analysis | ✅ |
+| Power Analysis | ✅ |
 | Documentation | ✅ |
 
 ---
