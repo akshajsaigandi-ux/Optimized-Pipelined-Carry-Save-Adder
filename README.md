@@ -312,7 +312,7 @@ The complete design flow was successfully verified.
   <img src="diagrams/utilization.png" alt="Resource Utilization" width="100%">
 </p>
 
-*Figure 4. FPGA resource utilization after synthesis.*
+*Figure 7. FPGA resource utilization after synthesis.*
 
 ### Key Observations
 
