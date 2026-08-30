@@ -79,6 +79,7 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 - FPGA resource utilization analysis
 - Timing summary generation
 - Power analysis
+- FPGA implementation
 - Hardware-oriented modular design
 
 ---
