@@ -328,7 +328,7 @@ The complete design flow was successfully verified.
 | Failing Endpoints | **0** |
 | Total Endpoints | **53** |
 
-The design completed synthesis without timing violations, although no user-defined timing constraints were applied.
+The design completed synthesis and implementation without failing endpoints; however, no user-defined timing constraints were applied, so formal timing closure and maximum operating frequency cannot be determined from the current report.
 
 ---
 
