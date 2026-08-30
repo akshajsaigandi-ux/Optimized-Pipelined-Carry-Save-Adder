@@ -94,6 +94,7 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 | Resource Analysis | ✅ |
 | Timing Analysis | ✅ |
 | Power Analysis | ✅ |
+| Bitstream Generation | ✅ |
 | Documentation | ✅ |
 
 ---
