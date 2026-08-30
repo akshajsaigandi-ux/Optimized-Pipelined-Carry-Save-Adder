@@ -418,6 +418,7 @@ The research based on this project was presented at:
 9. Run **Synthesis**.
 10.  Run **Implementation**.
 11.  Review **Resource Utilization**.
+12.  Review **Timing Summary**.
 
 ---
 
