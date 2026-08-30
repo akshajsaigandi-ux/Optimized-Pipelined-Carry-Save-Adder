@@ -14,7 +14,7 @@
 
 ## Overview
 
-This project presents the design and implementation of an **Optimized Pipelined Carry-Save Adder (PCSA)** for **16-bit cryptographic arithmetic units**. The architecture improves computational throughput by combining **Carry-Save Addition (CSA)** with a **single-stage pipelined architecture**, reducing the critical path before the final carry propagation stage.
+This project presents the design and implementation of an **Optimized Pipelined Carry-Save Adder (PCSA)** for **16-bit cryptographic arithmetic units**. The architecture is designed to improve computational throughput by combining **Carry-Save Addition (CSA)** with a **single-stage pipelined architecture**, separating partial addition from the final carry propagation stage.
 
 The design was developed using **Verilog HDL**, verified through **behavioral simulation**, and synthesized using **Xilinx Vivado 2025.2** targeting the **Xilinx Artix-7 FPGA** family.
 
