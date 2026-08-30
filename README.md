@@ -282,7 +282,7 @@ The complete design flow was successfully executed and verified through simulati
   <img src="diagrams/rtl_schematic.png" alt="RTL Schematic" width="100%">
 </p>
 
-*Figure 8. Elaborated RTL design.*
+*Figure 10. Vivado timing summary.*
 
 ---
 
