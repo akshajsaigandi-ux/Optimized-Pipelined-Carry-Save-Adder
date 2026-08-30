@@ -416,7 +416,7 @@ The research based on this project was presented at:
 7. Run **Behavioral Simulation**.
 8. Run **RTL Elaboration**.
 9. Run **Synthesis**.
-10. Review utilization and timing reports.
+10.  Run **Implementation**.
 
 ---
 
