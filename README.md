@@ -271,6 +271,7 @@ The complete design flow was successfully verified.
 - ✔ Resource Utilization generated
 - ✔ Timing Summary generated
 - ✔ Power Analysis generated
+- ✔ Bitstream Generation completed
 - ✔ No synthesis errors
 
 ---
