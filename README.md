@@ -302,7 +302,7 @@ The complete design flow was successfully verified.
   <img src="elaborated_design.png" alt="Elaborated RTL Design" width="100%">
 </p>
 
-*Figure 3. Elaborated RTL design.*
+*Figure 6. Elaborated RTL design.*
 
 ---
 
