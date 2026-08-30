@@ -328,7 +328,7 @@ The complete design flow was successfully verified.
   <img src="diagrams/timing_summary.png" alt="Timing Summary" width="100%">
 </p>
 
-*Figure 5. Vivado timing summary.*
+*Figure 8. Vivado timing summary.*
 
 ### Timing Results
 
