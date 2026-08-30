@@ -156,21 +156,72 @@ Optimized-Pipelined-Carry-Save-Adder/
 
 ---
 
-## Synthesis Results
+## Synthesis and FPGA Implementation Results
 
-The design was successfully synthesized in **Xilinx Vivado 2025.2** targeting the **Artix-7 FPGA**.
+The PCSA design was successfully synthesized and implemented in **Xilinx Vivado 2025.2** targeting the **Xilinx Artix-7 XC7A100TCSG324-1** FPGA device used by the Nexys A7 platform.
 
-| Resource | Usage |
-|----------|------:|
-| Slice LUTs | **84** |
-| Slice Registers | **30** |
-| Slice | **31** |
-| LUT as Logic | **40** |
-| LUT as Memory | **44** |
-| Bonded I/O | **98** |
-| BUFGCTRL | **1** |
+### FPGA Resource Utilization
 
-> **Note:** No XDC timing constraints were specified. The synthesis completed successfully, but timing results are reported without a user-defined target clock.
+| Resource | Utilization | Available | Utilization % |
+|----------|------------:|----------:|--------------:|
+| LUT | **19** | 63,400 | **0.03%** |
+| Flip-Flop | **19** | 126,800 | **0.01%** |
+| I/O | **34** | 210 | **16.19%** |
+
+The implementation uses a very small fraction of the available LUT and flip-flop resources, demonstrating a compact RTL implementation suitable for FPGA-based arithmetic acceleration.
+
+<p align="center">
+    <img src="diagrams/utilization.png" alt="FPGA Resource Utilization" width="100%">
+</p>
+
+*Figure 3. Post-implementation FPGA resource utilization reported by Xilinx Vivado.*
+
+---
+
+### Timing Analysis
+
+The implemented design contains **53 timing endpoints** and reports no failing endpoints.
+
+| Metric | Result |
+|--------|-------:|
+| Timing Constraints | **No user-defined clock constraint** |
+| WNS | **N/A** |
+| TNS | **0.000 ns** |
+| WHS | **N/A** |
+| THS | **0.000 ns** |
+| Failing Endpoints | **0** |
+| Timing Endpoints | **53** |
+
+> **Timing Note:** No user-defined clock constraint was applied during the current implementation. Therefore, WNS/WHS values are not interpreted as maximum-frequency or timing-closure results. A target clock constraint should be added in a future revision to perform meaningful setup/hold timing analysis.
+
+<p align="center">
+    <img src="diagrams/timing_summary.png" alt="Timing Summary" width="100%">
+</p>
+
+*Figure 4. Vivado implementation timing summary.*
+
+---
+
+### Power Analysis
+
+Vivado estimated the following on-chip power for the implemented design:
+
+| Metric | Result |
+|--------|-------:|
+| Total On-Chip Power | **0.114 W** |
+| Dynamic Power | **0.017 W** |
+| Device Static Power | **0.097 W** |
+| Junction Temperature | **25.5°C** |
+| Ambient Temperature | **25.0°C** |
+| Thermal Margin | **59.5°C** |
+
+<p align="center">
+    <img src="diagrams/power_summary.png" alt="Power Analysis" width="100%">
+</p>
+
+*Figure 5. Vivado estimated power analysis.*
+
+> **Power Note:** These values are Vivado estimates from the implemented design and are not measured board-level power consumption. The report indicates a low confidence level, so the results should be treated as an implementation estimate rather than a hardware measurement.
 
 ---
 
