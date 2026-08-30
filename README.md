@@ -302,7 +302,7 @@ The complete design flow was successfully executed and verified through simulati
   <img src="elaborated_design.png" alt="Elaborated RTL Design" width="100%">
 </p>
 
-*Figure 7. FPGA resource utilization after synthesis.*
+*Figure 6. Elaborated RTL design.*
 
 ---
 
