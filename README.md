@@ -345,7 +345,7 @@ The design completed synthesis without timing violations, although no user-defin
 | Total Estimated Power | **0.114 W** |
 | Dynamic Power | **0.017 W** |
 | Static Power | **0.097 W** |
-| Junction Temperature | **107.1°C** |
+| Junction Temperature | **25.5°C** |
 | Ambient Temperature | **25°C** |
 
 > **Note:** This power report is based on Vivado's vectorless power estimation. The unusually high I/O power is an estimation artifact and should not be interpreted as measured hardware power.
