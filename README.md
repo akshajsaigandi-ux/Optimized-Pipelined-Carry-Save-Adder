@@ -292,7 +292,7 @@ The complete design flow was successfully executed and verified through simulati
   <img src="diagrams/behavioral_waveform.png" alt="Simulation Waveform" width="100%">
 </p>
 
-*Figure 9. FPGA resource utilization after synthesis.*
+*Figure 11. Vivado estimated power report.*
 
 ---
 
