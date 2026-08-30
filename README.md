@@ -351,7 +351,7 @@ The design completed synthesis and implementation without failing endpoints; how
   <img src="diagrams/power_summary.png" alt="Power Analysis" width="100%">
 </p>
 
-*Figure 6. Vivado estimated power report.*
+*Figure 9. Vivado estimated power report.*
 
 | Metric | Value |
 |--------|------:|
