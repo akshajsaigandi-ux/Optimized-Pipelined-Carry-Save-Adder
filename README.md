@@ -80,6 +80,7 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 - Timing summary generation
 - Power analysis
 - FPGA implementation
+- Bitstream generation
 - Hardware-oriented modular design
 
 ---
