@@ -229,7 +229,7 @@ Vivado estimated the following on-chip power for the implemented design:
     <img src="diagrams/power_summary.png" alt="Power Analysis" width="100%">
 </p>
 
-*Figure 5. Vivado estimated power analysis.*
+*Figure 3. Vivado estimated power analysis.*
 
 > **Power Note:** These values are Vivado estimates from the implemented design and are not measured board-level power consumption. The report indicates a low confidence level, so the results should be treated as an implementation estimate rather than a hardware measurement.
 
