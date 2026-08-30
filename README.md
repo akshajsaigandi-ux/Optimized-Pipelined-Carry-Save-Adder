@@ -100,6 +100,8 @@ This project introduces a **single-stage pipelined CSA architecture** that impro
 | Bitstream Generation | ✅ |
 | Documentation | ✅ |
 
+> \* Timing analysis was completed, but no user-defined clock constraint was applied; therefore, maximum operating frequency and formal timing closure are not established by the current report.
+
 ---
 
 ## Architecture
