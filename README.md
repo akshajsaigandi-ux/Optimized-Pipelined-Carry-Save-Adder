@@ -326,7 +326,7 @@ The complete design flow was successfully verified.
 | Worst Hold Slack (WHS) | **N/A** |
 | Total Hold Slack (THS) | **0.000 ns** |
 | Failing Endpoints | **0** |
-| Total Endpoints | **462** |
+| Total Endpoints | **53** |
 
 The design completed synthesis without timing violations, although no user-defined timing constraints were applied.
 
