@@ -270,6 +270,7 @@ The complete design flow was successfully verified.
 - ✔ FPGA Implementation completed
 - ✔ Resource Utilization generated
 - ✔ Timing Summary generated
+- ✔ Power Analysis generated
 - ✔ No synthesis errors
 
 ---
