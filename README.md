@@ -184,7 +184,7 @@ The implementation uses a very small fraction of the available LUT and flip-flop
     <img src="diagrams/utilization.png" alt="FPGA Resource Utilization" width="100%">
 </p>
 
-*Figure 3. Post-implementation FPGA resource utilization reported by Xilinx Vivado.*
+*Figure 1. Post-implementation FPGA resource utilization reported by Xilinx Vivado.*
 
 ---
 
