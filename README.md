@@ -343,7 +343,7 @@ The design completed synthesis without timing violations, although no user-defin
 | Metric | Value |
 |--------|------:|
 | Total Estimated Power | **0.114 W** |
-| Dynamic Power | **42.93 W** |
+| Dynamic Power | **0.017 W** |
 | Static Power | **1.00 W** |
 | Junction Temperature | **107.1°C** |
 | Ambient Temperature | **25°C** |
