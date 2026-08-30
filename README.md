@@ -420,6 +420,7 @@ The research based on this project was presented at:
 11.  Review **Resource Utilization**.
 12.  Review **Timing Summary**.
 13.  Review **Power Analysis**.
+14.  Generate the **Bitstream**.
 
 ---
 
