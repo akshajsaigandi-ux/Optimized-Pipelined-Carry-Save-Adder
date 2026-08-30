@@ -26,7 +26,7 @@ This work also resulted in a **published Indian Patent** and was presented at **
 
 - 🇮🇳 **Published Indian Patent** based on the PCSA architecture.
 - 🎤 **Presented at ETCC 2026**, an IEEE-associated International Conference.
-- ⚡ Demonstrates the complete FPGA design flow from RTL design to synthesis and timing analysis.
+- ⚡ Demonstrates the complete FPGA design flow from RTL design through synthesis, implementation, timing analysis, resource analysis, power estimation, and bitstream generation.
 - 🔒 Serves as a reusable arithmetic building block for cryptographic hardware.
 
 ---
