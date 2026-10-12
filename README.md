@@ -478,3 +478,16 @@ This project is released under the **MIT License**. See the `LICENSE` file for d
 ## Support
 
 If you found this project useful, consider giving the repository a ⭐.
+
+
+---
+
+## Additional Progress Update — IEEE Xplore Publication
+
+The research associated with this PCSA project is available through IEEE Xplore.
+
+- **Paper:** *Optimized Pipelined Carry-Save Adder (PCSA) for 16-Bit Cryptographic Arithmetic Units*
+- **IEEE Xplore record:** https://ieeexplore.ieee.org/document/11681948
+- **Project relevance:** This publication record provides an official reference for the PCSA research described in this repository.
+
+For formal citations, use the author order, conference or publication name, DOI, and publication date exactly as listed in the IEEE Xplore record.
